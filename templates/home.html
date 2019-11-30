@@ -1,0 +1,215 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+<section class="banner_area">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-8 col-sm-12 offset-lg-2 offset-md-2">
+        <div class="banner_search_button">
+          <h1>Find your dream job here</h1>
+          <input type="text" placeholder="Search job...." name="searchjob">
+          <input type="submit" value="Search job">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="categoty_area">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12">
+        <div class="category_title text-center">
+          <h2>all job categories</h2>
+        </div>
+      </div>
+
+      {% for c in cat %}
+      <div class="col-lg-3 col-md-3 col-sm-12">
+        <div class="single_categoty">
+          <a href="#">{{ c.name }}</a>
+        </div>
+      </div>
+      {% endfor %}
+      
+    </div>
+  </div>
+</section>
+
+<section class="todays_job_area">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12">
+        <div class="taday_job_title">
+          <h2>todays jobs</h2>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-12">
+        <div class="single_today_job">
+          <h3><a href="#">job title</a></h3>
+          <h4>Education: <span>bsc in cse</span></h4>
+          <h5>experienced: <span>no</span></h5>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-12">
+        <div class="single_today_job">
+          <h3><a href="#">job title</a></h3>
+          <h4>Education: <span>bsc in cse</span></h4>
+          <h5>experienced: <span>no</span></h5>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-12">
+        <div class="single_today_job">
+          <h3><a href="#">job title</a></h3>
+          <h4>Education: <span>bsc in cse</span></h4>
+          <h5>experienced: <span>no</span></h5>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-12">
+        <div class="single_today_job">
+          <h3><a href="#">job title</a></h3>
+          <h4>Education: <span>bsc in cse</span></h4>
+          <h5>experienced: <span>no</span></h5>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-12">
+        <div class="single_today_job">
+          <h3><a href="#">job title</a></h3>
+          <h4>Education: <span>bsc in cse</span></h4>
+          <h5>experienced: <span>no</span></h5>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-12">
+        <div class="single_today_job">
+          <h3><a href="#">job title</a></h3>
+          <h4>Education: <span>bsc in cse</span></h4>
+          <h5>experienced: <span>no</span></h5>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-12">
+        <div class="single_today_job">
+          <h3><a href="#">job title</a></h3>
+          <h4>Education: <span>bsc in cse</span></h4>
+          <h5>experienced: <span>no</span></h5>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-12">
+        <div class="single_today_job">
+          <h3><a href="#">job title</a></h3>
+          <h4>Education: <span>bsc in cse</span></h4>
+          <h5>experienced: <span>no</span></h5>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-12">
+        <div class="single_today_job">
+          <h3><a href="#">job title</a></h3>
+          <h4>Education: <span>bsc in cse</span></h4>
+          <h5>experienced: <span>no</span></h5>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-12">
+        <div class="single_today_job">
+          <h3><a href="#">job title</a></h3>
+          <h4>Education: <span>bsc in cse</span></h4>
+          <h5>experienced: <span>no</span></h5>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-12">
+        <div class="single_today_job">
+          <h3><a href="#">job title</a></h3>
+          <h4>Education: <span>bsc in cse</span></h4>
+          <h5>experienced: <span>no</span></h5>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-12">
+        <div class="single_today_job">
+          <h3><a href="#">job title</a></h3>
+          <h4>Education: <span>bsc in cse</span></h4>
+          <h5>experienced: <span>no</span></h5>
+        </div>
+      </div>
+      
+      <div class="col-lg-12 col-md-12 col-sm-12">
+        <div class="today_job_btn">
+          <a href="#">see all today's jobs</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="blog_area">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12">
+        <div class="blog_title">
+          <h2>our recent blogs</h2>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-12">
+        <div class="single_blog">
+          <img src="img/job.jpg" alt="">
+          <h3><a href="#">blog title</a></h3>
+          <h5>date: 12-11-19</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In sed sunt dolor quae blanditiis. Molestias quod non, repudiandae tenetur ad deleniti magni enim iusto, cumque tempore, dignissimos quibusdam eligendi facilis.</p>
+          <a href="#">read more</a>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-12">
+        <div class="single_blog">
+          <img src="img/job.jpg" alt="">
+          <h3><a href="#">blog title</a></h3>
+          <h5>date: 12-11-19</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In sed sunt dolor quae blanditiis. Molestias quod non, repudiandae tenetur ad deleniti magni enim iusto, cumque tempore, dignissimos quibusdam eligendi facilis.</p>
+          <a href="#">read more</a>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-12">
+        <div class="single_blog">
+          <img src="img/job.jpg" alt="">
+          <h3><a href="#">blog title</a></h3>
+          <h5>date: 12-11-19</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In sed sunt dolor quae blanditiis. Molestias quod non, repudiandae tenetur ad deleniti magni enim iusto, cumque tempore, dignissimos quibusdam eligendi facilis.</p>
+          <a href="#">read more</a>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-12">
+        <div class="single_blog">
+          <img src="img/job.jpg" alt="">
+          <h3><a href="#">blog title</a></h3>
+          <h5>date: 12-11-19</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In sed sunt dolor quae blanditiis. Molestias quod non, repudiandae tenetur ad deleniti magni enim iusto, cumque tempore, dignissimos quibusdam eligendi facilis.</p>
+          <a href="#">read more</a>
+        </div>
+      </div>
+      
+      <div class="col-lg-12 col-md-12 col-sm-12">
+        <div class="blog_btn">
+          <a href="#">see all blogs</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="_area">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 col-md-3 col-sm-12">
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="_area">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 col-md-3 col-sm-12">
+        
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}
