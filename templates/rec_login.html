@@ -8,7 +8,7 @@
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12">
                 <div class="rec_reg_title text-center">
-                    <h2>Recruiter Register Form</h2>
+                    <h2>Recruiter Login Form</h2>
                 </div>
             </div>
         </div>
@@ -18,11 +18,8 @@
                     {% csrf_token %}
                     <div class="rec_acc">
                         <input class="form-control mb-4" type="text" placeholder="UserName" name="username">
-                        <input class="form-control mb-4" type="text" placeholder="Company Name" name="compname">
-                        <textarea class="form-control mb-4" type="text" placeholder="Company Address" name="compaddr"></textarea>
                         <input class="form-control mb-4" type="password" placeholder="PassWord" name="password">
-                        <input class="form-control mb-4" type="password" placeholder="Confirm PassWord" name="conpass">
-                        <input class="form-control" type="submit" value="Register">
+                        <input class="form-control" type="submit" value="Login">
                     </div>
                 </form>
             </div>

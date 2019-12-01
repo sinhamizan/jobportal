@@ -36,13 +36,13 @@
             <li><a href="contact.html">contact us</a></li>
             <li><a href="">register</a>
               <ul class="register_submenu">
-                <li><a href="recruiter.html">registration as recruiter</a></li>
+                <li><a href="{% url 'recruiter_register' %}">registration as recruiter</a></li>
                 <li><a href="jobseeker.html">register as job seeker</a></li>
               </ul>
             </li>
             <li><a href="">login</a>
               <ul class="register_submenu">
-                <li><a href="recruiter.html">login as recruiter</a></li>
+                <li><a href="{% url 'recruiter_login' %}">login as recruiter</a></li>
                 <li><a href="jobseeker.html">login as job seeker</a></li>
               </ul>
             </li>
