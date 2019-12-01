@@ -10,3 +10,7 @@ def home(request):
     }
     return render(request, 'home.html', context)
 
+
+def jobs(request):
+    return render(request, 'jobs.html')
+

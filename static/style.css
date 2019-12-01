@@ -255,3 +255,13 @@ li {
 	color: #fff;
 	background: #222270;
 }
+
+.sidebar {
+	background: #222270;
+	margin-top: 60px;
+	border-radius: 3px;
+	margin-right: 30px;
+}
+.job_area {
+	margin-top: 60px;
+}
